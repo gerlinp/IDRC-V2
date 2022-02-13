@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&display=swap');
+
+
+/* ------------------------GLOBALS------------------------- */
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e8e7e7; 
+  font-family: arial;
+  text-transform: uppercase;
+  min-width: 320px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=submit]:hover {
+  background: #fff;
+  color: #44338D;
+  cursor: pointer;
+}
+/*--------------------------------- Navigation -------------------------------*/
+
+#nav {
+  background: #003568;
+  color:#fff;
+  box-shadow: 0 5px 0 rgb(172, 185, 199);
+  position: sticky;
+}
+
+.nav-parent {
+  width: 100%;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1028px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: inherit; 
+  text-decoration: inherit;
+
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.nav-right {
+  display: flex;
+
+}
+.search-input {
+  padding: 0px 20px 20px 20px;
+  max-width: 500px;
+  display:flex;
+  margin: auto;
+  max-width:800px;
+}
+
+form {
+  background-color: #003568;
+  width: 100%;
+  max-width: 768px;
+}
+
+input[type=text] {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 15px 10px 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #002242;
+  border-style: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
+} 
+
+input[type=text]::-webkit-input-placeholder{
+  color: #E2DFD2;
+  letter-spacing: 2px;
+}
+
+input[type=text]:focus{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit] {
+  display: block;
+  font-size: .6em;
+  margin: 15px 15px 15px 0; 
+  padding: 10px;
+  background-color: #002A53;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button,
+.exam-btn,
+input[type=submit] {
+  outline: none;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.search-form {
+  display: flex;
+}
+
+/* ---------------------------Exams-------------------------------*/
+.exams {
+  background: #004282;
+  width: 95vw;
+  margin: 50px auto 0px;
+  box-shadow: 0 5px 0 rgb(172, 185, 199);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden;
+}
+
+header {
+  color: #FFF;
+  height: 75px;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #8063FA;
+  border-bottom: solid 2px #D4CAFF;
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.exam-results {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.exam {
+  display:flex;
+  flex-direction: column;
+  font-size: 10px;
+  border-radius: 20px;
+  font-family: 'Bebas Neue', cursive;
+  background: #003568;
+  color: white;
+  height: 300px;
+  width: 300px;
+  margin: 15px;
+}
+
+.exam-info-bottom,
+.exam-info-right {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.exam-info-top{
+  display: flex;
+  flex-direction: row;
+}
+
+.exam-info-right {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+  .player:last-of-type {
+    border-bottom-color: #D4CAFF;
+  }
+
+  .player-name:hover .remove-player {
+    visibility: visible;
+  }
+
+  .exam-find {
+    font-size: 16px;
+  }
+
+  .exam img {
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .exam-name {
+    font-size: 2rem;
+  }
+
+
+  .exam-btn {
+    background: #002242;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+    width: 70%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .exam-btn:hover {
+    color: #002242;
+    background: #fff;
+  }
+
+
+
+
+
