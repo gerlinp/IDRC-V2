@@ -9,8 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #e8e7e7; 
   font-family: arial;
-  text-transform: uppercase;
-  min-width: 320px;
+  min-width: 300px;
 }
 
 .center {
@@ -23,6 +22,44 @@ input[type=submit]:hover {
   color: #44338D;
   cursor: pointer;
 }
+
+.main button {
+  background: #003568; 
+}
+
+/* ------------------------Layout------------------------- */
+
+.default-layout {
+  display: gird;
+  grid-template-rows: 80px auto 3rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.default-layout button {
+  margin-right: 10px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  min-height: 88vh;
+}
+
+footer {
+  grid-area: footer;
+  background: #003568;
+  padding: 1rem;
+  color: white;
+}
+
+
+
 /*--------------------------------- Navigation -------------------------------*/
 
 #nav {
@@ -42,21 +79,25 @@ input[type=submit]:hover {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+
   width: 100%;
   font-family: 'Bebas Neue', cursive;
   font-size: 2rem;
 }
 
 .nav-link {
-  color: inherit; 
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
   text-decoration: inherit;
-
+  padding-left: 10px !important;
 }
+
+
 
 .logo {
   font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  padding: 10px
 }
 
 .nav-right {
@@ -138,24 +179,6 @@ input[type=submit] {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   overflow: hidden;
-}
-
-header {
-  color: #FFF;
-  height: 75px;
-  padding: 5px 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  background-color: #8063FA;
-  border-bottom: solid 2px #D4CAFF;
-}
-
-header h1 {
-  flex-grow: 1;
-  font-size: 1.5em;
-  letter-spacing: 2px;
-  font-weight: normal;
 }
 
 .exam-results {

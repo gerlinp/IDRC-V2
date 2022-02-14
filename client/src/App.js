@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import Navigation from "./components/Navigation";
-import Exam from "./components/Exam"
 
+import Exam from "./components/Exam"
+import { DefaultLayout } from "./layout/DefaultLayout";
+import { Dashboard } from "./pages/dashboard/Dashboard.page";
 class App extends Component  {
 
   state = {
@@ -57,24 +58,25 @@ class App extends Component  {
   render() {
   return (
     <div >
-      <Navigation/>
+      <DefaultLayout>
+      <Dashboard/>
 
-      {/* <Exams/> */}
-      <div className="exam-results">
-      {this.state.exams.map( (exam, index) =>
-          <Exam 
-            patient={exam.patient}
-            examId={exam.examId}
-            keyFind={exam.keyFind}
-            key={index}
-            image={exam.image}
-            age={exam.age}
-            zip={exam.zip}
-            // key={exam.id.toString()} 
-            index={index}
-          />
-        )}
-      </div>
+        {/* <div className="exam-results">
+        {this.state.exams.map( (exam, index) =>
+            <Exam 
+              patient={exam.patient}
+              examId={exam.examId}
+              keyFind={exam.keyFind}
+              key={index}
+              image={exam.image}
+              age={exam.age}
+              zip={exam.zip}
+              // key={exam.id.toString()} 
+              index={index}
+            />
+          )}
+        </div> */}
+      </DefaultLayout>
 
     </div>
   );
