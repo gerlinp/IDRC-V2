@@ -22,6 +22,7 @@ input[type=submit]:hover {
   background: #fff;
   color: #44338D;
   cursor: pointer;
+
 }
 /*--------------------------------- Navigation -------------------------------*/
 
@@ -76,6 +77,8 @@ form {
   width: 100%;
   max-width: 768px;
 }
+
+
 
 input[type=text] {
   flex-grow: 1;
@@ -235,7 +238,53 @@ header h1 {
     background: #fff;
   }
 
+/* ---------------------------createExam-------------------------------*/
 
+#createExam{
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 100%;  
+}
 
+#createExamTitle{
+  display: block;
+  text-align: center;
+}
+
+#createExamButtons{
+  display: flex;
+  justify-content: space-around;
+  max-width: 60%;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.btn-space{
+  margin: 0 10px;
+  
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.createExamInfo{
+  width: 40%;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.createExamInfo label {
+  width: 100%;
+  
+}
+
+.createExamInfo input {
+  margin: 0;
+  background-color: rgba(177, 177, 177, 0.637);
+}
 
 
