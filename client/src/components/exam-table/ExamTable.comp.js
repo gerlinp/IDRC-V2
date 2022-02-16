@@ -1,12 +1,14 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export const ExamTable = ({exams}) => {
+    // if(exams)
   return <Table striped bordered hover responsive>
-        <thead className="table-head">
+        <thead className="table-head text-center">
             <tr>
-                <th>Patient</th>
-                <th>Exam ID#:</th>
+                <th>Patient ID</th>
+                <th>Exam ID</th>
                 <th>Study Modality</th>
                 {/* <th>Key Findings</th> */}
                 <th>Details</th>
@@ -17,7 +19,7 @@ export const ExamTable = ({exams}) => {
             
 
         exams.map(( (row, index) =>        
-            <tr key={index}>
+            <tr className="table-row text-center" key={index}>
                 <td>{row.patient_Id}</td>
                 <td>{row.exam_Id}</td>
                 <td>{row.study_modality}</td>
@@ -35,7 +37,9 @@ export const ExamTable = ({exams}) => {
 
         </tbody>
     </Table>
-}
+};
 
-export default ExamTable.comp
+ExamTable.propTypes = {
+   exams: PropTypes.array.isRequired
+};
 
