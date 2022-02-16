@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: arial;
   min-width: 300px;
+  background:#e8e7e7;
 }
 
 .center {
@@ -24,8 +25,18 @@ input[type=submit]:hover {
 
 .main button {
   background: #003568; 
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+
 }
 
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-weight:bolder;
+  color: #003568;
+}
 /* ------------------------Layout------------------------- */
 
 .default-layout {
@@ -57,6 +68,9 @@ footer {
   color: white;
 }
 
+.breadcrumb {
+  margin-top: 20px;  
+}
 
 
 /*--------------------------------- Navigation -------------------------------*/
@@ -87,7 +101,6 @@ footer {
 .nav-link {
   font-family: 'Bebas Neue', cursive;
   font-size: 2rem;
-  text-decoration: inherit;
   padding-left: 10px !important;
 }
 
@@ -119,6 +132,7 @@ footer {
   width: 100%;
   max-width: 1320px;
   color: #fff;
+  border-radius: 10px 10px 0 0;
 }
 
 .dash-form  input[type=text] {
@@ -145,7 +159,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.dash-form  input[type=submit] {
+.dash-form  input[type=submit], .dash-form button {
   display: block;
   font-size: .6em;
   margin: 15px 15px 15px 0; 
@@ -159,13 +173,18 @@ footer {
   text-shadow: none;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .dash-form  button, .exam-btn, .table-button,
-.search-button {
+.add-button {
   outline: none;
-  transition: background-color 0.2s ease !important,
-              color 0.2s ease !important;
+  transition: background-color 0.2s ease,
+  color 0.2s ease !important;
+}
+
+.add-button {
+  background: #6fb8ff !important;
 }
 
 .search-form {
@@ -178,10 +197,30 @@ footer {
 }
 
   /*-------------------------------- Table -----------------------------*/  
+  thead, tbody, tfoot, tr, td, th {
+    border: none;
+  }
+
+  th {
+    background: #003568;
+  }
+  .table-row {
+    background: #fff;
+  }
   .table-head {
     background:#003568;
     color: #fff;
   }
+
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #eff7ff;
+ }
+
+ .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #6fb8ff;
+  color: white;
+  font-weight:bolder;
+}
 
   .table-button {
     border: none;
@@ -191,9 +230,18 @@ footer {
   }
 
   .table-button:hover, 
-  .search-button:hover {
+  .add-button:hover {
     background: #fff !important ;
     color: #003568 !important;
     cursor: pointer;
   }
+
+  td {
+    width: 25%;
+  }
   
+  .table > tbody > tr > td,
+  .table > thead > tr > th {
+    vertical-align: middle;
+}
+

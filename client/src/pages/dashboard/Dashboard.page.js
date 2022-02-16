@@ -1,8 +1,9 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import { ExamTable } from "../../components/exam-table/ExamTable.comp";
-import SearchForm from "../../components/SearchForm"
+// import SearchForm from "../../components/SearchForm"
 import Exams from "../../data/exams.json";
+
 
 
 export const  Dashboard = (exams) => {
