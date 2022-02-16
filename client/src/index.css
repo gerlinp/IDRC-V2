@@ -9,13 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #e8e7e7; 
   font-family: arial;
-<<<<<<< HEAD
-  min-width: 300px;
-  background:#e8e7e7;
-=======
   text-transform: uppercase;
   min-width: 320px;
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
 }
 
 .center {
@@ -29,60 +24,6 @@ input[type=submit]:hover {
   cursor: pointer;
 
 }
-<<<<<<< HEAD
-
-.main button {
-  background: #003568; 
-  color: #fff;
-  font-family: 'Bebas Neue', cursive;
-
-}
-
-
-a {
-  text-decoration: inherit;
-  color: inherit;
-  font-weight:bolder;
-  color: #003568;
-}
-/* ------------------------Layout------------------------- */
-
-.default-layout {
-  display: gird;
-  grid-template-rows: 80px auto 3rem;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
-.default-layout button {
-  margin-right: 10px;
-}
-
-header {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-  min-height: 88vh;
-}
-
-footer {
-  grid-area: footer;
-  background: #003568;
-  padding: 1rem;
-  color: white;
-}
-
-.breadcrumb {
-  margin-top: 20px;  
-}
-
-
-=======
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
 /*--------------------------------- Navigation -------------------------------*/
 
 #nav {
@@ -110,16 +51,8 @@ footer {
 }
 
 .nav-link {
-<<<<<<< HEAD
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
-  padding-left: 10px !important;
-}
-
-=======
   color: inherit; 
   text-decoration: inherit;
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
 
 }
 
@@ -142,13 +75,7 @@ footer {
 form {
   background-color: #003568;
   width: 100%;
-<<<<<<< HEAD
-  max-width: 1320px;
-  color: #fff;
-  border-radius: 10px 10px 0 0;
-=======
   max-width: 768px;
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
 }
 
 
@@ -177,11 +104,7 @@ input[type=text]:focus{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-.dash-form  input[type=submit], .dash-form button {
-=======
 input[type=submit] {
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
   display: block;
   font-size: .6em;
   margin: 15px 15px 15px 0; 
@@ -195,17 +118,11 @@ input[type=submit] {
   text-shadow: none;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
-.dash-form  button, .exam-btn, .table-button,
-.add-button {
-=======
 button,
 .exam-btn,
 input[type=submit] {
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
   outline: none;
   transition: background-color 0.2s ease,
               color 0.2s ease;
@@ -264,45 +181,6 @@ header h1 {
   margin: 15px;
 }
 
-<<<<<<< HEAD
-  /*-------------------------------- Table -----------------------------*/  
-  thead, tbody, tfoot, tr, td, th {
-    border: none;
-  }
-
-  th {
-    background: #003568;
-  }
-  .table-row {
-    background: #fff;
-  }
-  .table-head {
-    background:#003568;
-    color: #fff;
-  }
-
-  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #eff7ff;
- }
-
- .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #6fb8ff;
-  color: white;
-  font-weight:bolder;
-}
-
-  .table-button {
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-family: 'Bebas Neue', cursive;
-  }
-
-  .table-button:hover, 
-  .add-button:hover {
-    background: #fff !important ;
-    color: #003568 !important;
-=======
 .exam-info-bottom,
 .exam-info-right {
   display: flex;
@@ -352,7 +230,6 @@ header h1 {
     text-align: center;
     width: 70%;
     font-size: 1.5rem;
->>>>>>> parent of 9ab68c7 (Merge branch 'main' of https://github.com/gerlinp/swe-techDive-solo into main)
     cursor: pointer;
   }
 
@@ -410,13 +287,4 @@ header h1 {
   background-color: rgba(177, 177, 177, 0.637);
 }
 
-
-  td {
-    width: 25%;
-  }
-  
-  .table > tbody > tr > td,
-  .table > thead > tr > th {
-    vertical-align: middle;
-}
 
