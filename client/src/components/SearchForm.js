@@ -1,35 +1,33 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
+import { Form, Button } from "react-bootstrap"
+import Exams from "../data/exams.json";
+import PropTypes from 'prop-types';
+import history from '../history';
 
-class AddPlayerForm extends Component {
+export const SearchForm = ({handleOnChange, str}) => {
+  console.log(str)
+  return (
 
-  static propTypes = {
-    addPlayer: PropTypes.func
-  };
-
-  playerInput = React.createRef();
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.addPlayer(this.playerInput.current.value);
-    e.currentTarget.reset();
-  }
-
-  render() {
-    return (
-      <form className='center' onSubmit={this.handleSubmit}>
-        <input 
-          type="text"
-          ref={this.playerInput}
-          placeholder="Enter Exam info"
-        />
-        <input 
-          type="submit"
-          value="Search"
-        />
-      </form>
-    );
-  }
+  <div className="dash-form">
+    <Form className='center'>
+      <input 
+        type="text"
+        placeholder="SEARCH Patient ID"
+        name="searchStr"
+        onChange={handleOnChange}
+        value={str}
+      />
+      <Button className="add-button">Add Exam +</Button>  
+      <button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam </button>
+      
+    </Form>
+    <div className="search-info text-center">Total Exams: {Exams.length} </div>
+    </div>
+  
+  );
 }
- 
-export default AddPlayerForm;
+
+SearchForm.propTypes = {
+  handleOnChange: PropTypes.func.isRequired,
+  str: PropTypes.string.isRequired
+}

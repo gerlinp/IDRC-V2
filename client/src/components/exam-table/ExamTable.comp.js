@@ -2,6 +2,7 @@ import React from 'react'
 import {Table} from 'react-bootstrap'
 import PropTypes from 'prop-types'
 
+
 export const ExamTable = ({exams}) => {
     // if(exams)
   return <Table striped bordered hover responsive>

@@ -1,7 +1,4 @@
 import React, {PureComponent} from 'react'
-import history from '../history';
-
-
 // import PropTypes from 'prop-types';
 
 
@@ -45,8 +42,7 @@ class Exam extends PureComponent {
                 { keyFind }
               </span>
       </div>
-        <button className="exam-btn" onClick={() => history.push('/CreateExam')} >DETAILS </button>
-        
+        <button className="exam-btn">DETAILS</button>
       </div>
     );
   }
