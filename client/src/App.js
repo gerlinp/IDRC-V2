@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import { DefaultLayout } from "./layout/DefaultLayout";
 import { Dashboard } from "./pages/dashboard/Dashboard.page";
 import { ExamList } from "./pages/exam-list/ExamList.page"
+import { CreateExam } from "./components/CreateExam"
 
 class App extends Component  {
 
