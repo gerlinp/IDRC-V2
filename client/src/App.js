@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-
-import Exam from "./components/Exam"
+// import CreateExam from "./components/CreateExam";
+// import Exam from "./components/Exam"
 import { DefaultLayout } from "./layout/DefaultLayout";
 import { Dashboard } from "./pages/dashboard/Dashboard.page";
 class App extends Component  {
@@ -57,8 +57,10 @@ class App extends Component  {
 
   render() {
   return (
-    <div >
+    <div>
+ 
       <DefaultLayout>
+      {/* <CreateExam/> */}
       <Dashboard/>
 
         {/* <div className="exam-results">

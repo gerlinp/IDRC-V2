@@ -1,47 +1,41 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 
-export const ExamTable = () => {
+export const ExamTable = ({exams}) => {
   return <Table striped bordered hover responsive>
-        <thead>
+        <thead className="table-head">
             <tr>
                 <th>Patient</th>
                 <th>Exam ID#:</th>
-                <th>Image Study Description</th>
-                <th>Key Findings</th>
+                <th>Study Modality</th>
+                {/* <th>Key Findings</th> */}
                 <th>Details</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>COVID-19-AR-16434409</td>
-                <td>Exam-1</td>
-                <td>XR CHEST AP PORTABLE</td>
-                <td>Subtle patchy bibasilar and right upper lobe airspace  opacities</td>
-                <td><button>Details</button></td>
+        {exams.length ? (
+            
+
+        exams.map(( (row, index) =>        
+            <tr key={index}>
+                <td>{row.patient_Id}</td>
+                <td>{row.exam_Id}</td>
+                <td>{row.study_modality}</td>
+                {/* <td>{row.key_findings}</td> */}
+                <td><button className='table-button'>Details</button></td>
             </tr>
+            ))
+            ) : (
             <tr>
-                <td>COVID-19-AR-16434409</td>
-                <td>Exam-1</td>
-                <td>XR CHEST AP PORTABLE</td>
-                <td>Subtle patchy bibasilar and right upper lobe airspace  opacities</td>
-                <td><button>Details</button></td>
+                <td colSpan="5" className="text-center">
+                No Exam to show{" "}</td>
             </tr>
-            <tr>
-                <td>COVID-19-AR-16434409</td>
-                <td>Exam-1</td>
-                <td>XR CHEST AP PORTABLE</td>
-                <td>Subtle patchy bibasilar and right upper lobe airspace  opacities</td>
-                <td><button>Details</button></td>
-            </tr>
+            )
+        }
+
         </tbody>
     </Table>
 }
 
 export default ExamTable.comp
 
-// brixia: "1,2,3,4",
-// age: 44,
-// sex: "m",
-// bmi:"33.3",
-// zip: 722

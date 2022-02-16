@@ -1,20 +1,24 @@
-import React from 'react'
-import {Container, Row, Col, Button} from 'react-bootstrap'
+import React from 'react';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import { ExamTable } from "../../components/exam-table/ExamTable.comp";
+import SearchForm from "../../components/SearchForm"
+import Exams from "../../data/exams.json";
 
-export const  Dashboard = () => {
+
+export const  Dashboard = (exams) => {
   return (
     <Container>
         <Row>
            <Col className="text-center mt-5 mb-2">
-               <Button style={{'fontSize':'2rem', padding: '10px 30px'}}>
-                   Add New Exam
-               </Button>
+            {/* <SearchForm/> */}
+            <Button style={{'fontSize':'2rem', padding: '10px 30px'}}>
+                  Add New Exam
+            </Button>
            </Col> 
         </Row>
         <Row>
            <Col className="text-center mt-5 mb-2">
-                <div>Total Tickets: 50</div>
+                <div>Total Tickets:{Exams.length}</div>
            </Col> 
         </Row>
         <Row>
@@ -25,7 +29,7 @@ export const  Dashboard = () => {
         <hr />
         <Row>
            <Col className="recent-exam">
-                <ExamTable/>
+                <ExamTable exams={Exams}/>
            </Col> 
         </Row>
     </Container>
