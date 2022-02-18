@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 
 export const ExamTable = ({exams}) => {
-    // if(exams)
+    // if(exams.length)
   return <Table striped bordered hover responsive>
         <thead className="table-head text-center">
             <tr>

@@ -7,25 +7,25 @@ import {SearchForm} from "../../components/SearchForm"
 import exams from "../../data/exams.json";
 
 
-export const ExamList = () => {
+export const ExamList = ({results}) => {
   
-  const [str,setStr] = useState('');
-  const [displayExams,setDisplayExam] = useState('')
+  const [str,setStr] = useState("");
+  const [displayExams,setDisplayExam] = useState(exams);
 
-  useEffect(() => {
-    setDisplayExam(exams)
-  },[str, displayExams]);
+  useEffect(() => {},[str, displayExams]);
   
   const handleOnChange = (e) => {
-    const {value} = e.target;
+    const { value } =  e.target;
+    console.log(value);
     setStr(value);
-    searchExam(value);
+    searchExam(value)
   };
 
-  const searchExam = sttr => {
-    const displayExams = exams.filter(row=> 
-      row.patient_Id.toLowerCase().includes(sttr.toLowerCase())
-    )
+  const searchExam = (sttr) => {
+    const displayExams = exams.filter((row) => 
+      row.patient_Id.toUpperCase().includes(sttr.toUpperCase())
+    );
+    console.log(displayExams)
     setDisplayExam(displayExams)
   };
 
@@ -36,7 +36,7 @@ export const ExamList = () => {
           <PageBreadcrumb page="Exam list"/>
         </Col>
       </Row>
-      <SearchForm className="text-center" handleOnChange={handleOnChange} str={str} />
+      <SearchForm className="text-center" handleOnChange={handleOnChange} str={str} results={results} />
       <Row>
         <Col>
           <ExamTable exams={displayExams}/>

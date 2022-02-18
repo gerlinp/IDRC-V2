@@ -1,8 +1,6 @@
 // rfc to get import
 import React from 'react'
 
-
-
 export default function CreateExam() {
 
   return (
