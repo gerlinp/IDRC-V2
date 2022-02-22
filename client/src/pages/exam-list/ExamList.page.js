@@ -29,6 +29,11 @@ export const ExamList = ({results}) => {
     setDisplayExam(displayExams)
   };
 
+  const resultCount = () => {
+    const results = this.state.result;
+    return results;
+  }
+
   return (
     <Container>
       <Row>
@@ -36,7 +41,12 @@ export const ExamList = ({results}) => {
           <PageBreadcrumb page="Exam list"/>
         </Col>
       </Row>
-      <SearchForm className="text-center" handleOnChange={handleOnChange} str={str} results={results} />
+      <SearchForm className="text-center" handleOnChange={handleOnChange} str={str}  />
+      <Row>
+        <Col>
+        <div className="search-info text-center">Total Exams: {displayExams.length}</div>
+        </Col>
+      </Row>
       <Row>
         <Col>
           <ExamTable exams={displayExams}/>
@@ -45,3 +55,4 @@ export const ExamList = ({results}) => {
     </Container>
   )
 }
+ 

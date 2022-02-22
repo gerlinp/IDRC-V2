@@ -6,16 +6,6 @@ import history from '../History';
 
 export const SearchForm = ({handleOnChange, str}) => {
 
-  // function Results() {
-  //   const [results, setResult] = useState();
-    
-  //   return (
-  //     <div 
-  //       className="search-info text-center">Total Exams: {exams}
-  //     </div>
-  //   )
-  // }
-
   return (
     <div className="dash-form">
       <Form className='center'>
@@ -27,10 +17,8 @@ export const SearchForm = ({handleOnChange, str}) => {
           value={str}
         />
         {/* <Button className="add-button">Add Exam +</Button>   */}
-        <Button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam + </Button>
-        
+        <Button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam + </Button> 
       </Form>
-      <div className="search-info text-center">Total Exams: {Exams.length}</div>
     </div>
   
   );

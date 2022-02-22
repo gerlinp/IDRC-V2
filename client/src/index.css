@@ -133,6 +133,9 @@ footer {
   width: 100%;
   max-width: 1320px;
   color: #fff;
+}
+
+.dash-form {
   border-radius: 10px 10px 0 0;
 }
 
