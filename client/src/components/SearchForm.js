@@ -8,6 +8,11 @@ export const SearchForm = ({handleOnChange, str}) => {
   console.log(str)
   return (
 
+
+    //wrap button around link component -A.M
+    //https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588
+    //
+    
   <div className="dash-form">
     <Form className='center'>
       <input 
@@ -18,6 +23,7 @@ export const SearchForm = ({handleOnChange, str}) => {
         value={str}
       />
       <Button className="add-button">Add Exam +</Button>  
+      
       <button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam </button>
       
     </Form>
@@ -31,3 +37,4 @@ SearchForm.propTypes = {
   handleOnChange: PropTypes.func.isRequired,
   str: PropTypes.string.isRequired
 }
+

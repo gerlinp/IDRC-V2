@@ -1,16 +1,21 @@
 // rfc to get import
 import React from 'react'
-
-
+import { Container, Row, Col } from 'react-bootstrap'
+import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
 
 export default function CreateExam() {
 
   return (
-    
-    <>
-    <form id="createExam">
+    <Container>
+      <Row>
+        <Col>
+          <PageBreadcrumb page="Create Exam"/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <form id="createExam">
       <h1 id="createExamTitle">Create Exam</h1>
-
 
       <div id="createExamButtons">
         <button id="addExam" className="exam-btn btn-space">Add Exam</button>
@@ -54,6 +59,8 @@ export default function CreateExam() {
         </div>
       </div>
     </form>
-    </>
+        </Col>
+      </Row>
+    </Container>
   )
 }

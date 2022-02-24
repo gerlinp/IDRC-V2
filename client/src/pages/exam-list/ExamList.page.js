@@ -1,9 +1,9 @@
 
 import React, {useState, useEffect} from 'react'
-import {Container,Row,Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
 import { ExamTable } from '../../components/exam-table/ExamTable.comp'
-import {SearchForm} from "../../components/SearchForm"
+import { SearchForm } from "../../components/SearchForm"
 import exams from "../../data/exams.json";
 
 

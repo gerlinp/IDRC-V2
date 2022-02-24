@@ -10,7 +10,7 @@ class App extends Component  {
   return (
     <div>
       <DefaultLayout>
-        <CreateExam/>
+        <ExamList/>
       </DefaultLayout>
     </div>
   );
