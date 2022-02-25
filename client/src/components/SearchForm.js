@@ -1,18 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Button } from "react-bootstrap"
 import Exams from "../data/exams.json";
 import PropTypes from 'prop-types';
-import history from '../history';
+import history from '../History';
 
 export const SearchForm = ({handleOnChange, str}) => {
-  console.log(str)
-  return (
-
 
     //wrap button around link component -A.M
     //https://artwilton.medium.com/adding-a-link-to-a-bootstrap-button-with-react-router-57d2f6197588
     //
-    
+return (
   <div className="dash-form">
     <Form className='center'>
       <input 
@@ -28,6 +25,8 @@ export const SearchForm = ({handleOnChange, str}) => {
       
     </Form>
     <div className="search-info text-center">Total Exams: {Exams.length} </div>
+
+
     </div>
   
   );
