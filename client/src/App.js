@@ -3,6 +3,7 @@ import { DefaultLayout } from "./layout/DefaultLayout";
 import { Dashboard } from "./pages/dashboard/Dashboard.page";
 import { ExamList } from "./pages/exam-list/ExamList.page";
 import CreateExam  from "./pages/create-exam/CreateExam";
+import { Exam } from "./pages/exam/Exam.page";
 
 class App extends Component  {
 
@@ -10,7 +11,7 @@ class App extends Component  {
   return (
     <div>
       <DefaultLayout>
-        <ExamList/>
+        <Exam/>
       </DefaultLayout>
     </div>
   );

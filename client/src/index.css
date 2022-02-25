@@ -8,9 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: arial;
-  min-width: 300px;
+  min-width: 310px;
   background:#e8e7e7;
-  min-width: 320px;
+
 }
 
 .center {
@@ -212,7 +212,7 @@ footer {
     background: #fff;
   }
   .table-head {
-    background:#003568;
+    background:#003568 !important;
     color: #fff;
   }
 
@@ -234,7 +234,8 @@ footer {
   }
 
   .table-button:hover, 
-  .add-button:hover {
+  .add-button:hover,
+  .close-button:hover {
     background: #fff !important ;
     color: #003568 !important;
     cursor: pointer;
@@ -298,3 +299,45 @@ footer {
   margin: 0;
   background-color: rgba(177, 177, 177, 0.637);
 }
+
+
+/* ---------------------------Exam-------------------------------*/
+
+img {
+  width:100%;
+  height: auto;
+  margin: 0 auto;
+  /* max-width:600px; */
+}
+.exam-info-header {
+  font-family: 'Bebas Neue', cursive;
+  padding: 10px;
+  font-size: 2.5rem;
+  background: #003568;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.exam-info {
+  font-size: 1.25rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 10px 10px;
+}
+/* .exam-info-title {
+  display: block;
+  font-weight: bolder;
+  background: #003568;
+  color: #fff;
+  font-size: 1rem;;
+} */
+
+/* .exam-info-container {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 1px;
+  padding-left: 20px;
+} */
+
+
