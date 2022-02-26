@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap"
 import Exams from "../data/exams.json";
 import PropTypes from 'prop-types';
 import history from '../History';
+import { Link } from "react-router-dom";
 
 export const SearchForm = ({handleOnChange, str}) => {
 
@@ -17,7 +18,9 @@ export const SearchForm = ({handleOnChange, str}) => {
           value={str}
         />
         {/* <Button className="add-button">Add Exam +</Button>   */}
-        <Button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam + </Button> 
+        <Link to="/create-exam">
+          <Button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam + </Button> 
+        </Link>
       </Form>
     </div>
   

@@ -62,14 +62,6 @@ export const  Exam = () => {
 
 
 
-// "patient_Id": "COVID-19-AR-16434409",
-// "Diag to img study (days)": "0",
-// "Diagnosis to Imaging time (hrs)": "15",
-// "Image_study_description": "XR CHEST AP PORTABLE",
-// "study_modality": "DX",
-// "key_findings": "Subtle patchy bibasilar and right upper lobe airspace  opacities",
-// "png_filename": "COVID-19-AR-16434409_XR_CHEST_AP_PORTABLE_1.png",
-// "exam_Id": "Exam-1"
 
 
 

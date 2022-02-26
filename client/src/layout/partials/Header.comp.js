@@ -1,10 +1,13 @@
-import React from 'react'
-import {Navbar, Nav,} from 'react-bootstrap'
+import React from 'react';
+import {Navbar, Nav,} from 'react-bootstrap';
+// import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 
 export  const Header = () => {
+  
   return (
     <Navbar
-        collapseOnSelect
+        // collapseOnSelect
         // bg="info"
         variant="dark"
         expand="md"
@@ -16,8 +19,11 @@ export  const Header = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-            <Nav.Link href="/exams">Exams</Nav.Link>
-            <Nav.Link href="/admin">Admin</Nav.Link>
+
+        <Nav.Link as={Link} to="/exam-list">Exams</Nav.Link>
+
+
+            <Nav.Link as={Link} to="/admin-list">Admin</Nav.Link>
         </Nav>
     </Navbar.Collapse>
         

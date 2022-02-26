@@ -25,7 +25,12 @@ export const ExamTable = ({exams}) => {
                 <td>{row.exam_Id}</td>
                 <td>{row.study_modality}</td>
                 {/* <td>{row.key_findings}</td> */}
-                <td><button className='table-button'>Details</button></td>
+                <td>
+                    <button className='table-button'>Details</button>
+                    <button className='table-button edit-btn'>Edit</button>
+                    <button className='table-button delete-btn'>Delete</button>
+                
+                </td>
             </tr>
             ))
             ) : (

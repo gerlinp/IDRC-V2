@@ -72,7 +72,37 @@ footer {
 .breadcrumb {
   margin-top: 20px;  
 }
+/* ------------------------Login------------------------- */
 
+.login-page {
+  height: 100vh;
+  background: #003568;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+.login-page h1 {
+  font-size: 4.5rem;
+}
+
+.login-page .btn {
+  margin: 10px;
+  background: #003568;
+  border: none; 
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #6fb8ff;
+  border-radius: .3rem;
+}
 
 /*--------------------------------- Navigation -------------------------------*/
 
@@ -142,7 +172,7 @@ footer {
 .dash-form  input[type=text] {
   flex-grow: 1;
   border-width: 0 0 1px 0;
-  margin: 15px 10px 15px 15px;
+  margin: 15px;
   padding: 10px;
   border-radius: 5px;
   background: #002242;
@@ -160,7 +190,7 @@ footer {
 }
 
 .dash-form input[type=text]:focus{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #6fb8ff;
 }
 
 .dash-form  input[type=submit], .dash-form button {
@@ -235,7 +265,8 @@ footer {
 
   .table-button:hover, 
   .add-button:hover,
-  .close-button:hover {
+  .close-button:hover,
+  .login-page button:hover {
     background: #fff !important ;
     color: #003568 !important;
     cursor: pointer;
@@ -251,6 +282,19 @@ footer {
 }
 
 
+.edit-btn, .delete-btn {
+  display:none;
+  width: 3rem;
+  margin-top: 5px;
+}
+
+.edit-btn {
+  background: green !important;
+}
+
+.delete-btn {
+  background: red!important;
+}
   /* ---------------------------createExam-------------------------------*/
 
   #createExam {
@@ -341,3 +385,47 @@ img {
 } */
 
 
+/* ---------------------------Admin-------------------------------*/
+
+.exam-btn {
+  display: none!important;
+}
+
+.admin .exam-btn {
+  display: block!important;
+}
+
+.admin .edit-btn, .admin .delete-btn {
+  display: inline-block !important;
+}
+
+.admin .dash-form input[type=text] {
+  margin: 15px 10px 15px 15px;
+}
+ 
+.admin .dash-form,
+.admin .search-info,
+.admin th {
+  background: #000;
+}
+
+.admin .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #000;
+  color: white;
+}
+
+.admin .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #6fb8ff;
+  color: white;
+  font-weight:bolder;
+}
+
+.admin .table {
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #2c3034;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #373b3e;
+
+  color: #fff;
+  border-color: #373b3e;
+}
