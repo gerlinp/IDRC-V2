@@ -25,16 +25,16 @@ input[type=submit]:hover {
 }
 
 .main button {
-  background: #003568; 
+  background: #6fb8ff; 
   color: #fff;
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Bebas Neue', cursive; */
 
 }
 
 
 a {
-  text-decoration: inherit;
-  color: inherit;
+  text-decoration: inherit!important;
+  color: inherit!important;
   font-weight:bolder;
   color: #003568;
 }
@@ -49,9 +49,9 @@ a {
     "footer";
 }
 
-.default-layout button {
+/* .default-layout button {
   margin-right: 10px;
-}
+} */
 
 header {
   grid-area: header;
@@ -81,11 +81,12 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
-
+  color: #fff;
 }
 
 .login-page h1 {
   font-size: 4.5rem;
+  color:#000;
 }
 
 .login-page .btn {
@@ -260,7 +261,7 @@ footer {
     border: none;
     border-radius: 5px;
     color: #fff;
-    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
   }
 
   .table-button:hover, 

@@ -30,16 +30,16 @@ export const AdminList = ({results}) => {
     setDisplayExam(displayExams)
   };
 
-  const resultCount = () => {
-    const results = this.state.result;
-    return results;
-  }
+  // const resultCount = () => {
+  //   const results = this.state.result;
+  //   return results;
+  // }
 
   return (
     <Container className="admin">
       <Row>
         <Col>
-          <PageBreadcrumb page="Exam list"/>
+          <PageBreadcrumb page="Admin List"/>
         </Col>
       </Row>
       <SearchForm className="text-center admin" handleOnChange={handleOnChange} str={str}  />

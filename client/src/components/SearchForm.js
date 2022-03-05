@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { Form, Button } from "react-bootstrap"
 import Exams from "../data/exams.json";
 import PropTypes from 'prop-types';
@@ -11,6 +11,7 @@ export const SearchForm = ({handleOnChange, str}) => {
     <div className="dash-form">
       <Form className='center'>
         <input 
+          autocomplete="off"
           type="text"
           placeholder="Search..."
           name="searchStr"
@@ -19,11 +20,10 @@ export const SearchForm = ({handleOnChange, str}) => {
         />
         {/* <Button className="add-button">Add Exam +</Button>   */}
         <Link to="/create-exam">
-          <Button className="exam-btn add-button" onClick={() => history.push('../CreateExam')} >Add Exam + </Button> 
+          <Button className="exam-btn add-button">Add Exam + </Button> 
         </Link>
       </Form>
     </div>
-  
   );
 }
 

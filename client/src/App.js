@@ -18,7 +18,7 @@ function App() {
           <Route path="/create-exam"><CreateExam/></Route>
           <Route path="/exam-list"><ExamList/></Route>
           <Route path="/admin-list"><AdminList/></Route>
-          <Route path="/exam/:eid"><Exam/></Route>
+          <Route path="/exam/:eId"><Exam/></Route>
         </DefaultLayout>
       </Switch>
     </Router>

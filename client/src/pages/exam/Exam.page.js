@@ -1,14 +1,23 @@
-import React, {Component } from 'react'
+import React, {useState, useEffect } from 'react'
 import {Container, Row, Col, Button } from 'react-bootstrap'
 import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp'
 import exams from "../../data/exams"
-
-
-
-const exam = exams[11];
-
+import {useParams} from 'react-router-dom'
 
 export const  Exam = () => {
+  const {eId} = useParams();
+
+  const [exam, setExam] = useState("");
+
+  useEffect(() => {
+    for (let i = 0; i < exams.length; i++) {
+      if(i == eId) {
+        setExam(exams[i]);
+        continue;
+      }   
+    } 
+  }, [eId]);
+
   return (
     <Container>
       <Row>
@@ -19,11 +28,9 @@ export const  Exam = () => {
           <Button className="close-button">Close Exam</Button>
         </Col>
       </Row>
-
       <Row className="exam-info-header text-center">
         <div>EXAM INFO</div>
       </Row>
-
       <Row className="exam-info">
         <Col >
           <img className="" src={exam.png_filename} alt="xray" />

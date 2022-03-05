@@ -5,6 +5,7 @@ import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp"
 import { ExamTable } from '../../components/exam-table/ExamTable.comp'
 import {SearchForm} from "../../components/SearchForm"
 import exams from "../../data/exams.json";
+import patients from "../../data/Patient Data.json";
 
 
 export const ExamList = ({results}) => {
@@ -49,7 +50,7 @@ export const ExamList = ({results}) => {
       </Row>
       <Row>
         <Col>
-          <ExamTable exams={displayExams}/>
+          <ExamTable patients={patients} exams={displayExams}/>
         </Col>
       </Row>
     </Container>
