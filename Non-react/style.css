@@ -18,9 +18,18 @@ body {
   margin: 0;  */
 }
 
+span {
+  white-space:nowrap;
+}
+
+
 
 img {
   max-width: 100px;
+}
+
+a {
+  padding-left: 0;
 }
 
 /* -----------------------NAVIGATION------------------------*/
@@ -153,6 +162,10 @@ footer {
   .cell {
     padding: 2px 16px;
     display: block; 
-    width:95vw;
+    /* justify-content: center; */
+  }
+
+  span .cell {
+    padding-left: 15px;
   }
 }
