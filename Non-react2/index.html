@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>IDRC</title>
+  </head>
+  <body>
+
+    
+<div class="wrap" id="content-area">
+  <h1>Material Design Ripple Transition</h1>
+<p>Just playing around to see if I can recreate the Material Design ripple as a page transition in CSS. Click any <a href="#content-2">link</a> in this block of text to load another set of text. The <a href="#">links</a> don't go anywhere yet. They are just <a href="#">hooks</a> to allow you to click somewhere</p>
+
+<p>The style and animation is entirely CSS so it is smooth. JavaScript is used to add classes at the right time. It also pauses to wait for the content to be replaced, and calculates where to centre the hole. There are two stages to the animation. When a <a href="#">link</a> is clicked the border-width grows very large.</p>
+
+  <p>That's enough reading on this slide. Click a <a href="#content-3">link</a> to load the second slide</p>
+  
+  
+</div>
+<div id="content-2" style="display:none">
+  <h2>Slide Two</h2>
+  <p>This is the second slide. If you want you can <a href="#">go back to the first slide</a>. The second part of the animation is increasing the size of the element itself in order to create a hole.</p>
+  <p>This transition could be used for presentation slides. Using pushState then this could be used as a transition between webpages.</p>
+</div>
+
+
+<div id="content-3" style="display:none">
+  <h1>HELLO</h1>
+</div>
+
+<div class="ripple-wrap"><div class="ripple"></div></div>
+    <!-- <nav class="navbar navbar-expand- navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IDRC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">USER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ADMIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="exam-table responsive" class="">
+      <div id="exam-table-top" class="text-center text-white">
+        <input id="search-input" autocomplete="off" placeholder="Enter Patient ID......" ></input>
+        <h1 class="exam-total">
+            Total Exams: <span id="exam-num">232</span>
+        </h1>
+      </div>
+      <div id="exams container">
+        <div class="wrapper">
+        <div class="table">
+          <div class="exam-row header">
+            <div class="cell">Patient ID</div>
+            <div class="cell">Exam ID</div>
+            <div class="cell">Xray</div>
+            <div class="cell">Key FIndings</div>
+            <div class="cell">Study Modality</div>
+            <div class="cell">Age</div>
+            <div class="cell">Gender</div>
+            <div class="cell">BMI</div>
+            <div class="cell">Zip Code</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h5>© IDRC all rights reserved - 2022.</h5>
+    </footer> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="exams.json"></script>
+    <script type="text/javascript" src="Patient_Data.json"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
