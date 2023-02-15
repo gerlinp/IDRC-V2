@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
 body {
+  background: #0d1321;
+  color: aliceblue;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,8 +14,12 @@ code {
     monospace;
 }
 
+.navbar {
+  background: #1d2d44;
+}
+
 .navbar-brand {
-  color: #df3ca6;
+  color: aliceblue;
 }
 
 .navbar-brand img {
@@ -48,4 +54,24 @@ code {
 
 .icon {
   margin-right: 5px;
+}
+
+.card {
+  background: #1d2d44;
+  border: none;
+}
+
+tbody {
+  background: aliceblue;
+  color: #1d2d44;
+}
+
+thead {
+  background: #1d2d44 !important;
+  color: aliceblue;
+}
+
+.btn {
+  background: #4c9f70;
+  color: aliceblue;
 }
