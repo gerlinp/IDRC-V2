@@ -1,24 +1,46 @@
-import React, {Component} from "react";
-import { DefaultLayout } from "./layout/DefaultLayout";
-import { Dashboard } from "./pages/dashboard/Dashboard.page";
-import { ExamList } from "./pages/exam-list/ExamList.page";
-import CreateExam  from "./pages/create-exam/CreateExam";
+import Header from "./components/Header";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import Clients from "./components/Clients";
+import Projects from "./components/Projects";
+import AddClientModal from "./components/AddClientModal";
 
-class App extends Component  {
+const cache = new InMemoryCache({
+  typePolicies: {
+    Query: {
+      fields: {
+        clients: {
+          merge(existing, incoming) {
+            return incoming;
+          },
+        },
+        projects: {
+          merge(existing, incoming) {
+            return incoming;
+          },
+        },
+      },
+    },
+  },
+});
 
-  render() {
+const client = new ApolloClient({
+  uri: "http://localhost:5000/graphql",
+  cache,
+});
+
+function App() {
   return (
-    <div>
-      <DefaultLayout>
-        <ExamList/>
-      </DefaultLayout>
-    </div>
+    <>
+      <ApolloProvider client={client}>
+        <Header />
+        <div className="container">
+          <AddClientModal />
+          <Projects />
+          <Clients />
+        </div>
+      </ApolloProvider>
+    </>
   );
-  }
 }
 
 export default App;
-
-
-
- 
