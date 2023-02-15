@@ -13,9 +13,10 @@ export default function AddClientModal() {
     variables: { name, email, phone },
     update(cache, { data: { addClient } }) {
       const { clients } = cache.readQuery({ query: GET_CLIENTS });
+
       cache.writeQuery({
         query: GET_CLIENTS,
-        data: { clients: clients.concat([addClient]) },
+        data: { clients: [...clients, addClient] },
       });
     },
   });
@@ -57,9 +58,9 @@ export default function AddClientModal() {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="addClientModalLabel">
+              <h5 className="modal-title" id="addClientModalLabel">
                 Add Client
-              </h1>
+              </h5>
               <button
                 type="button"
                 className="btn-close"
@@ -90,7 +91,7 @@ export default function AddClientModal() {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label">phone</label>
+                  <label className="form-label">Phone</label>
                   <input
                     type="text"
                     className="form-control"
@@ -99,6 +100,7 @@ export default function AddClientModal() {
                     onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
+
                 <button
                   type="submit"
                   data-bs-dismiss="modal"
