@@ -71,7 +71,18 @@ thead {
   color: aliceblue;
 }
 
-.btn {
+.card-body .btn {
   background: #4c9f70;
   color: aliceblue;
+}
+
+.modal-content {
+  background: #1d2d44;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d2d44 !important;
 }

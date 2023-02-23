@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
@@ -42,6 +43,7 @@ function App() {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
+          <Footer />
         </Router>
       </ApolloProvider>
     </>
